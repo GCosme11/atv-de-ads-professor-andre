@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoGCOsMe | Soluções em Transporte e Logística</title>
+    
+    <!-- Importando Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de fontes (Google Fonts - Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <header class="bg-blue-950 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <i class="fa-solid fa-boxes-packing text-orange-500 text-3xl mr-3"></i>
+                    <span class="font-bold text-2xl tracking-tight">LoGCOs<span class="text-orange-500">Me</span></span>
+                </div>
+                
+                <!-- Menu de Navegação (Desktop) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-300 hover:text-white transition duration-300 font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-300 hover:text-white transition duration-300 font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-300 hover:text-white transition duration-300 font-medium">Sobre Nós</a>
+                    <a href="#contato" class="text-gray-300 hover:text-white transition duration-300 font-medium">Contato</a>
+                </nav>
+
+                <!-- Botão Menu Mobile (Oculto no Desktop) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="inicio" class="relative bg-blue-900 overflow-hidden">
+            <!-- Background abstrato de ondas/gradiente -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-950 to-blue-800 opacity-90"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
+                    Levamos seu negócio <br class="hidden md:block">
+                    <span class="text-orange-500">mais longe e mais rápido.</span>
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-blue-200 max-w-2xl mb-10">
+                    Na LoGCOsMe, conectamos distâncias com segurança. Soluções completas de transporte e logística para garantir que sua carga chegue ao destino no prazo certo.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-orange-500/30 transition transform hover:-translate-y-1 text-lg">
+                        Fazer Cotação Agora
+                    </a>
+                    <a href="#servicos" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-4 px-8 rounded-full transition text-lg">
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Soluções em Transporte</h2>
+                    <div class="h-1 w-20 bg-orange-500 mx-auto rounded"></div>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Oferecemos uma variedade de serviços desenhados para atender às necessidades específicas da sua cadeia de suprimentos.</p>
+                </div>
+
+                <!-- Grid de Cartões -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <!-- Serviço 1: Frete Nacional -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-16 w-16 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-truck-fast text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Frete Nacional</h3>
+                        <p class="text-gray-600">
+                            Cobertura em todo o território brasileiro. Frota moderna e motoristas capacitados para transportar sua carga com total segurança, do norte ao sul.
+                        </p>
+                    </div>
+
+                    <!-- Serviço 2: Rastreamento -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-16 w-16 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-location-dot text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Rastreamento 24/7</h3>
+                        <p class="text-gray-600">
+                            Acompanhe sua encomenda em tempo real. Tecnologia de ponta via GPS para que você saiba exatamente onde está a sua carga a qualquer momento.
+                        </p>
+                    </div>
+
+                    <!-- Serviço 3: Entrega Expressa -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-16 w-16 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-stopwatch text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Entrega Expressa</h3>
+                        <p class="text-gray-600">
+                            Urgência é o nosso forte. Prioridade máxima para cargas que precisam chegar ao destino em prazos apertados, garantindo a satisfação do seu cliente final.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Call to Action Menor -->
+        <section class="bg-blue-600 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-2">Pronto para otimizar sua logística?</h3>
+                    <p class="text-blue-100">Fale com nossos especialistas e descubra como podemos ajudar.</p>
+                </div>
+                <a href="#contato" class="bg-white text-blue-700 hover:bg-gray-10 font-bold py-3 px-8 rounded-full shadow-lg transition">
+                    Fale Conosco
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="bg-blue-950 pt-16 pb-8 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Info Empresa -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fa-solid fa-boxes-packing text-orange-500 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-white">LoGCOs<span class="text-orange-500">Me</span></span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Comprometidos com a excelência em logística e transporte de cargas. Movimentamos a economia com confiança.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-orange-500 transition">Início</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-orange-500 transition">Nossos Serviços</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Rastrear Carga</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-3 text-orange-500"></i>
+                            <span>Av. das Logísticas, 1000<br>São Paulo - SP, 01000-000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-orange-500"></i>
+                            <span>(11) 4002-8922</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-orange-500"></i>
+                            <span>contato@logcosme.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 LoGCOsMe Transportes. Todos os direitos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
